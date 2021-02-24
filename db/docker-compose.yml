@@ -1,0 +1,10 @@
+version: '3'
+services:
+  test-postgres:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: app
+    ports:
+      - "5432:5432"
